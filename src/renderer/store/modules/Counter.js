@@ -1,14 +1,12 @@
 const state = {
-  main: 0
+  chromePath: null
 }
 
 const mutations = {
-  DECREMENT_MAIN_COUNTER (state) {
-    state.main--
-  },
-  INCREMENT_MAIN_COUNTER (state) {
-    state.main++
-  }
+  setChromePath (state, { exec }) {
+    console.log(exec)
+    state.chromePath = exec
+  } 
 }
 
 const actions = {
